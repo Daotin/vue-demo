@@ -10,13 +10,7 @@ export default {
   props: {
     msg: String
   },
-  methods:{
-    let fileInput = document.querySelector('#inpt-file');
-
-    fileInput.addEventListener('change', function() {
-
-    });
-  }
+  methods: {}
 };
 </script>
 

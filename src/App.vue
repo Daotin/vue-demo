@@ -8,20 +8,28 @@
     <label for="mike">Mike</label>
     <br>
     <span>Checked names: {{ checkedNames }}</span>
+
+    <hr>
+
+    <custom-input v-model="inputvalue"></custom-input>
+    <span>{{inputvalue}}</span>
   </div>
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld";
+import CustomInput from "./components/custom-input.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld
+    HelloWorld,
+    CustomInput
   },
   data: function() {
     return {
-      checkedNames: []
+      checkedNames: [],
+      inputvalue: "A"
     };
   }
 };
@@ -32,7 +40,6 @@ export default {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin-top: 60px;
 }
