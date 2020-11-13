@@ -133,7 +133,7 @@ export default {
 
   .clamp {
     width: clamp(500px, 100%, 600px);
-    height: 50px;
+    height: 51px;
     background: pink;
   }
 }
