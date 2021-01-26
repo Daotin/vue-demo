@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+/*css 初始化 */
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+table,
+fieldset,
+legend,
+input,
+textarea {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: top;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline-style: none;
+}
+
+textarea {
+    resize: none;
+    /*不能改变多行文本框的大小*/
+}
+
+fieldset,
+img,
+input,
+button {
+    /*fieldset组合表单中的相关元素*/
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+    /*去除蓝色边框*/
+}
+
+table {
+    border-collapse: collapse;
+    /*合并外边线*/
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s,
+i,
+em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+
+/*公共类*/
+/* .w1170 {
+    width: 1170px;
+    margin: 0 auto;
+} */
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
